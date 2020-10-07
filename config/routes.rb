@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  resources :homes
   root 'homes#index'
+  resources :homes, only: :index
+  resources :menus, only: :index
 end
