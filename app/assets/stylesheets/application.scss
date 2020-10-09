@@ -4,3 +4,12 @@
 @import 'modules/variables';
 @import 'homes';
 @import 'menus';
+
+* {
+  box-sizing: border-box;
+  font-family: 'ジンへな黒流';
+}
+
+html {
+  background-color: #f1f3f8;
+}
