@@ -107,7 +107,7 @@ $totalColumns: 9;
 }
 
 body {
-  background: #f1f3f8;
+  background-image: linear-gradient(#d6e0f0 0% 9%, #f1f3f8 10% 100%,);
   background-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -129,7 +129,16 @@ body {
     .logo2 {
     width: 25%;
     height: 25%;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    .logo2:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
 }
