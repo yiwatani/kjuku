@@ -36,27 +36,42 @@
         animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       }
     }
-    .enter {
-      .enterContent {
-        font-size: 40px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
-        animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation-delay: 0.5s;
-        .enterBtn {
-          text-decoration: none;
-          letter-spacing: 0.1em;
-          color: #8d93ab;
-          display: inline-block;
-          transition: .3s;
-          -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-        .enterBtn:hover {
-          -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-        }
+    .enterContent {
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 20px;
+      animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation-delay: 0.5s;
+      .enterBtn {
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        color: #8d93ab;
+        display: inline-block;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      .enterBtn:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+    .enterAbout {
+      margin-top: 50px;
+      animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation-delay: 1s;
+      .aboutBtn {
+        font-size: 20px;
+        text-decoration: none;
+        color: #393b44;
+        display: inline-block;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      .aboutBtn:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
       }
     }
   }

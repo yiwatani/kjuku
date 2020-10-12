@@ -5,6 +5,7 @@
   .top
     .title
       = image_tag 'kinniku_logo.png', class: 'logo'
-    .enter
-      %p.enterContent
-        = link_to 'ENTER', menus_path, class: 'enterBtn'
+    %p.enterContent
+      = link_to 'ENTER', menus_path, class: 'enterBtn'
+    %p.enterAbout
+      = link_to '筋肉塾とは？', about_homes_path, class: 'aboutBtn'
