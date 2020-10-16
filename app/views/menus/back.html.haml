@@ -1,0 +1,31 @@
+.container
+  .at-section
+    .at-section__title
+      = link_to (image_tag "kinniku_logo.png", class: 'logo2'), root_path
+  .at-grid{"data-column" => "3"}
+    .at-column
+      .at-menu
+        .at-menu__avatar
+          = image_tag 'muscle-4.png'
+        .at-menu__name らっとぷるだうん
+        .at-menu__title 羽を生やすなら
+    .at-column
+      .at-menu
+        .at-menu__avatar
+          = image_tag 'muscle-4.png'
+        .at-menu__name べんとおーばーろう
+        .at-menu__title 背中の広さ&厚み
+    .at-column
+      .at-menu
+        .at-menu__avatar
+          = image_tag 'muscle-4.png'
+        .at-menu__name しーてっどろう
+        .at-menu__title 背中の厚み
+    .at-column
+      .at-menu
+        .at-menu__avatar
+          = image_tag 'muscle-4.png'
+        .at-menu__name でっとりふと
+        .at-menu__title 背中の厚み
+  .dojoSelect
+    = link_to '道場選択に戻る', menus_path, class: 'dojoBtn'
