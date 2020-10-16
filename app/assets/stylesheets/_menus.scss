@@ -63,7 +63,7 @@ $totalColumns: 9;
       flex-basis: 100% !important;
     }
   }
-  &-user {
+  &-menu {
     position: absolute;
     top: 50%;
     left: 0;
@@ -107,7 +107,7 @@ $totalColumns: 9;
 }
 
 body {
-  background-image: linear-gradient(#d6e0f0 0% 9%, #f1f3f8 10% 100%,);
+  background-image: linear-gradient(#d6e0f0 0% 12%, #f1f3f8 13% 100%,);
   background-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -121,6 +121,26 @@ body {
   box-sizing: border-box;
   transform-origin: top center;
   transform: scale(0.8);
+  .menuLink {
+    text-decoration: none;
+  }
+  .dojoSelect {
+    text-align: center;
+    margin-top: 100px;
+    .dojoBtn {
+      text-decoration: none;
+      font-size: 30px;
+      color: #8d93ab;
+      display: inline-block;
+      transition: .3s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .dojoBtn:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
 }
 
 .at-section {

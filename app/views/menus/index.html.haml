@@ -4,32 +4,38 @@
       = link_to (image_tag "kinniku_logo.png", class: 'logo2'), root_path
   .at-grid{"data-column" => "3"}
     .at-column
-      .at-user
-        .at-user__avatar
-          = image_tag 'muscle-1.png'
-        .at-user__name 肩幅道場
-        .at-user__title 肩とれ
+      .at-menu
+        = link_to delt_menus_path, class: 'menuLink' do
+          .at-menu__avatar
+            = image_tag 'muscle-1.png'
+          .at-menu__name 肩幅道場
+          .at-menu__title 肩とれ
     .at-column
-      .at-user
-        .at-user__avatar
-          = image_tag 'muscle-2.png'
-        .at-user__name 胸板道場
-        .at-user__title 胸とれ
+      .at-menu
+        = link_to chest_menus_path, class: 'menuLink' do
+          .at-menu__avatar
+            = image_tag 'muscle-2.png'
+          .at-menu__name 胸板道場
+          .at-menu__title 胸とれ
     .at-column
-      .at-user
-        .at-user__avatar
-          = image_tag 'muscle-3.png'
-        .at-user__name 腕力道場
-        .at-user__title 腕とれ
+      .at-menu
+        = link_to arm_menus_path, class: 'menuLink' do
+          .at-menu__avatar
+            = image_tag 'muscle-3.png'
+          .at-menu__name 腕力道場
+          .at-menu__title 腕とれ
     .at-column
-      .at-user
-        .at-user__avatar
-          = image_tag 'muscle-4.png'
-        .at-user__name 逆三角道場
-        .at-user__title 背中とれ
-    .at-column
-      .at-user
-        .at-user__avatar
-          %span.cs Coming Soon
-        .at-user__name 馬力道場
-        .at-user__title 脚とれ
+      .at-menu
+        = link_to back_menus_path, class: 'menuLink' do
+          .at-menu__avatar
+            = image_tag 'muscle-4.png'
+          .at-menu__name 逆三角道場
+          .at-menu__title 背中とれ
+  .dojoSelect
+    = link_to '最初の画面に戻る', root_path, class: 'dojoBtn'
+    -# .at-column
+    -#   .at-menu
+    -#     .at-menu__avatar
+    -#       %span.cs Coming Soon
+    -#     .at-menu__name 馬力道場
+    -#     .at-menu__title 脚とれ
