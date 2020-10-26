@@ -5,12 +5,6 @@ Rails.application.routes.draw do
       get :about 
     end
   end
-  resources :menus, only: :index do
-    collection do
-      get :delt
-      get :chest
-      get :arm
-      get :back
-    end
-  end
+  resources :menus, only: :index
+  resources :exercises, only: :show
 end
