@@ -6,39 +6,10 @@
     - @menus.each do |menu|
       .at-column
         .at-menu
-          = link_to exercises_path, class: 'menuLink' do
+          = link_to exercise_path(menu), class: 'menuLink' do
             .at-menu__avatar
               = image_tag menu.image
             .at-menu__name
               = menu.text
             .at-menu__title
               = menu.name
-  -#   .at-column
-  -#     .at-menu
-  -#       = link_to chest_menus_path, class: 'menuLink' do
-  -#         .at-menu__avatar
-  -#           = image_tag 'muscle-2.png'
-  -#         .at-menu__name 胸板道場
-  -#         .at-menu__title 胸とれ
-  -#   .at-column
-  -#     .at-menu
-  -#       = link_to arm_menus_path, class: 'menuLink' do
-  -#         .at-menu__avatar
-  -#           = image_tag 'muscle-3.png'
-  -#         .at-menu__name 腕力道場
-  -#         .at-menu__title 腕とれ
-  -#   .at-column
-  -#     .at-menu
-  -#       = link_to back_menus_path, class: 'menuLink' do
-  -#         .at-menu__avatar
-  -#           = image_tag 'muscle-4.png'
-  -#         .at-menu__name 逆三角道場
-  -#         .at-menu__title 背中とれ
-  -# .dojoSelect
-  -#   = link_to '最初の画面に戻る', root_path, class: 'dojoBtn'
-  -#   -# .at-column
-  -#   -#   .at-menu
-  -#   -#     .at-menu__avatar
-  -#   -#       %span.cs Coming Soon
-  -#   -#     .at-menu__name 馬力道場
-  -#   -#     .at-menu__title 脚とれ

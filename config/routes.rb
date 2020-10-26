@@ -6,5 +6,5 @@ Rails.application.routes.draw do
     end
   end
   resources :menus, only: :index
-  resources :exercises, only: :index
+  resources :exercises, only: :show
 end
