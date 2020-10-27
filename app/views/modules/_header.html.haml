@@ -1,0 +1,15 @@
+.at-section
+  .at-section__title
+    = link_to (image_tag "kinniku_logo.png", class: 'logo2'), root_path
+  %ul.at-section__user
+    - if user_signed_in?
+      %li.mypage
+        = link_to '#', class: "mypageBtn" do
+          まいぺーじ
+    - else
+      %li.header--contentrigth1
+        = link_to new_user_registration_path, class: "userNew" do
+          新規会員登録
+      %li.header--contentrigth1
+        = link_to new_user_session_path, class: "login" do
+          ろぐいん

@@ -6,7 +6,7 @@ $totalColumns: 9;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #f1f3f8;
+    background: $mainColor;
     @for $i from 1 through $totalColumns {
       &[data-column="#{$i}"] {
         .#{$prefix}-column {
@@ -21,7 +21,7 @@ $totalColumns: 9;
   &-column {
     z-index: 0;
     position: relative;
-    background: #d6e0f0;
+    background: $subColor;
     box-shadow: 0 0 0 1px #E2E9ED;
     padding: 10px;
     margin: 50px 105px;
@@ -77,7 +77,7 @@ $totalColumns: 9;
       padding-top: 10px;
       margin: 0 auto 20px;
       overflow: hidden;
-      background-color: #f1f3f8;
+      background-color: $mainColor;
       img {
         display: block;
         width: 100%;
@@ -85,7 +85,7 @@ $totalColumns: 9;
       }
       .cs {
         font-size: 30px;
-        color: #393b44;
+        color: $textColor;
         letter-spacing: 0.1em;
         line-height: 200px;
       }
@@ -94,20 +94,20 @@ $totalColumns: 9;
       padding-top: 10px;
       font-size: 30px;
       line-height: 2.625rem;
-      color: #393b44;
+      color: $textColor;
       letter-spacing: 0.1em;
     }
     &__title {
       font-size: 20px;
       line-height: 2.375rem;
-      color: #8d93ab;
+      color: $deepColor;
       letter-spacing: 0.1em;
     }
   }
 }
 
 body {
-  background-image: linear-gradient(#d6e0f0 0% 12%, #f1f3f8 13% 100%,);
+  background-image: linear-gradient($subColor 0% 12%, $mainColor 13% 100%,);
   background-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -130,7 +130,7 @@ body {
     .dojoBtn {
       text-decoration: none;
       font-size: 30px;
-      color: #8d93ab;
+      color: $deepColor;
       display: inline-block;
       transition: .3s;
       -webkit-transform: scale(1);
@@ -144,6 +144,7 @@ body {
 }
 
 .at-section {
+  position: relative;
   &__title {
     text-align: center;
     .logo2 {
@@ -157,6 +158,47 @@ body {
     transform: scale(1);
     }
     .logo2:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  &__user {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    display: flex;
+    font-size: 22px;
+    .mypageBtn {
+      text-decoration: none;
+      display: inline-block;
+      transition: .3s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .mypageBtn:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .userNew {
+      text-decoration: none;
+      display: inline-block;
+      transition: .3s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .userNew:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .login {
+      text-decoration: none;
+      padding-left: 35px;
+      display: inline-block;
+      transition: .3s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .login:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }

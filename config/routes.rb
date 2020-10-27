@@ -6,6 +6,11 @@ Rails.application.routes.draw do
       get :about 
     end
   end
-  resources :menus, only: :index
-  resources :exercises, only: :show
+  resources :menus, only: :index do
+    resources :exercises, only: :show do
+      collection do
+        get :exercise_index
+      end
+    end
+  end
 end
