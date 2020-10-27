@@ -1,0 +1,12 @@
+.Notification {
+  .notice {
+    background-color: $subColor;
+    color: $textColor;
+    text-align: center;
+  }
+  .alert {
+    background-color: $textColor;
+    color: $subColor;
+    text-align: center;
+  }
+}
