@@ -1,12 +1,15 @@
 .Notification {
+  font-size: 20px;
   .notice {
     background-color: $subColor;
     color: $textColor;
     text-align: center;
+    padding: 10px;
   }
   .alert {
     background-color: $textColor;
     color: $subColor;
     text-align: center;
+    padding: 10px;
   }
 }
