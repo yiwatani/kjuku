@@ -106,39 +106,40 @@ $totalColumns: 9;
   }
 }
 
-body {
-  background-image: linear-gradient($subColor 0% 12%, $mainColor 13% 100%,);
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient($subColor 0% 22%, $mainColor 23% 100%,);
   background-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  transform-origin: top center;
-  transform: scale(0.8);
-  .menuLink {
-    text-decoration: none;
-  }
-  .dojoSelect {
-    text-align: center;
-    margin-top: 100px;
-    .dojoBtn {
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transform-origin: top center;
+    transform: scale(0.8);
+    .menuLink {
       text-decoration: none;
-      font-size: 30px;
-      color: $deepColor;
-      display: inline-block;
-      transition: .3s;
-      -webkit-transform: scale(1);
-      transform: scale(1);
     }
-    .dojoBtn:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+    .dojoSelect {
+      text-align: center;
+      margin: 100px 0;
+      .dojoBtn {
+        text-decoration: none;
+        font-size: 30px;
+        color: $deepColor;
+        display: inline-block;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      .dojoBtn:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
   }
 }

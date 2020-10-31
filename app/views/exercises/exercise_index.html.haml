@@ -1,14 +1,15 @@
-.container
-  = render partial: "modules/header"
-  .at-grid{"data-column" => "3"}
-    - @exercises.each do |exercise|
-      .at-column
-        .at-menu
-          .at-menu__avatar
-            = image_tag exercise.icon
-          .at-menu__name
-            = exercise.name
-          .at-menu__title
-            = exercise.text
-  .dojoSelect
-    = link_to '道場選択に戻る', menus_path, class: 'dojoBtn'
+.wrapper
+  .container
+    = render partial: "modules/header"
+    .at-grid{"data-column" => "3"}
+      - @exercises.each do |exercise|
+        .at-column
+          .at-menu
+            .at-menu__avatar
+              = image_tag exercise.icon
+            .at-menu__name
+              = exercise.name
+            .at-menu__title
+              = exercise.text
+    .dojoSelect
+      = link_to '道場選択に戻る', menus_path, class: 'dojoBtn'
