@@ -7,6 +7,8 @@
       = render "devise/shared/error_messages", resource: resource
       .lginForm
         .field
+          = f.text_field :name, autofocus: true, placeholder: '名前'
+        .field
           = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'メールアドレス'
         .field
           = f.password_field :password, autocomplete: "new-password", placeholder: 'パスワード(6文字以上)'
