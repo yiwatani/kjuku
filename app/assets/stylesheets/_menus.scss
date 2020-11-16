@@ -169,29 +169,18 @@ $totalColumns: 9;
     right: 0px;
     display: flex;
     font-size: 22px;
-    .mypageBtn {
+    .userL {
       text-decoration: none;
       display: inline-block;
       transition: .3s;
       -webkit-transform: scale(1);
       transform: scale(1);
     }
-    .mypageBtn:hover {
+    .userL:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    .userNew {
-      text-decoration: none;
-      display: inline-block;
-      transition: .3s;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-    .userNew:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    .login {
+    .userR {
       text-decoration: none;
       padding-left: 35px;
       display: inline-block;
@@ -199,7 +188,7 @@ $totalColumns: 9;
       -webkit-transform: scale(1);
       transform: scale(1);
     }
-    .login:hover {
+    .userR:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }

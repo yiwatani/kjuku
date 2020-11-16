@@ -4,12 +4,15 @@
   %ul.at-section__user
     - if user_signed_in?
       %li.mypage
-        = link_to '#', class: "mypageBtn" do
+        = link_to user_path(current_user.id), class: "userL" do
           まいぺーじ
+      %li.logout
+        = link_to destroy_user_session_path, method: :delete, class: "userR" do
+          ろぐあうと
     - else
       %li.header--contentrigth1
-        = link_to new_user_registration_path, class: "userNew" do
+        = link_to new_user_registration_path, class: "userL" do
           新規会員登録
       %li.header--contentrigth1
-        = link_to new_user_session_path, class: "login" do
+        = link_to new_user_session_path, class: "userR" do
           ろぐいん
