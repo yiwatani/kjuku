@@ -1,2 +1,25 @@
-%h1 Users#show
-%p Find me in app/views/users/show.html.haml
+.Container
+  .lefside
+    %nav.MypageNav
+      %ul.MypageNav__list
+        %li.MypageNav__items
+          = link_to "マイページ", '#', class: "MypageNav__link" 
+        %li.MypageNav__items
+          = link_to "めにゅう作成","#", class: "MypageNav__link" 
+        %li.MypageNav__items
+          = link_to "いいね一覧","#", class: "MypageNav__link" 
+        %li.MypageNav__items
+          = link_to "肩とれ","#", class: "MypageNav__link" 
+        %li.MypageNav__items
+          = link_to "胸とれ","#", class: "MypageNav__link" 
+        %li.MypageNav__items
+          = link_to "腕とれ","#", class: "MypageNav__link" 
+        %li.MypageNav__items
+          = link_to "背中とれ","#", class: "MypageNav__link" 
+
+  .Rightside
+    .Mypage__userIcon
+      = link_to "#" do
+        =image_tag "3229890_l.jpg", class: "UserIcon"
+      %h2
+        = @user.name
