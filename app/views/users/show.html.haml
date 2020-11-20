@@ -3,23 +3,21 @@
     %nav.MypageNav
       %ul.MypageNav__list
         %li.MypageNav__items
-          = link_to "マイページ", '#', class: "MypageNav__link" 
-        %li.MypageNav__items
           = link_to "めにゅう作成","#", class: "MypageNav__link" 
         %li.MypageNav__items
           = link_to "いいね一覧","#", class: "MypageNav__link" 
         %li.MypageNav__items
-          = link_to "肩とれ","#", class: "MypageNav__link" 
+          = link_to "肩とれ", exercise_index_menu_exercises_path(1), class: "MypageNav__link" 
         %li.MypageNav__items
-          = link_to "胸とれ","#", class: "MypageNav__link" 
+          = link_to "胸とれ", exercise_index_menu_exercises_path(2), class: "MypageNav__link" 
         %li.MypageNav__items
-          = link_to "腕とれ","#", class: "MypageNav__link" 
+          = link_to "腕とれ", exercise_index_menu_exercises_path(3), class: "MypageNav__link" 
         %li.MypageNav__items
-          = link_to "背中とれ","#", class: "MypageNav__link" 
+          = link_to "背中とれ", exercise_index_menu_exercises_path(4), class: "MypageNav__link" 
 
   .Rightside
     .Mypage__userIcon
-      = link_to "#" do
+      = link_to user_path(current_user.id) do
         =image_tag "3229890_l.jpg", class: "UserIcon"
-      %h2
+      %h2.userName
         = @user.name
