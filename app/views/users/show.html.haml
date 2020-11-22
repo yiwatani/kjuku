@@ -21,3 +21,5 @@
         =image_tag "3229890_l.jpg", class: "UserIcon"
       %h2.userName
         = @user.name
+    = month_calendar do |date|
+      = date.day
