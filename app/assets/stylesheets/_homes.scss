@@ -3,7 +3,7 @@
   margin:0;
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #f1f3f8 50%, #d6e0f0 50%);
+    background-image: linear-gradient(-60deg, $mainColor 50%, $subColor 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -45,7 +45,7 @@
       .enterBtn {
         text-decoration: none;
         letter-spacing: 0.1em;
-        color: #8d93ab;
+        color: $deepColor;
         display: inline-block;
         transition: .3s;
         -webkit-transform: scale(1);
@@ -63,7 +63,7 @@
       .aboutBtn {
         font-size: 20px;
         text-decoration: none;
-        color: #393b44;
+        color: $textColor;
         display: inline-block;
         transition: .3s;
         -webkit-transform: scale(1);

@@ -6,7 +6,7 @@ $totalColumns: 9;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #f1f3f8;
+    background: $mainColor;
     @for $i from 1 through $totalColumns {
       &[data-column="#{$i}"] {
         .#{$prefix}-column {
@@ -21,7 +21,7 @@ $totalColumns: 9;
   &-column {
     z-index: 0;
     position: relative;
-    background: #d6e0f0;
+    background: $subColor;
     box-shadow: 0 0 0 1px #E2E9ED;
     padding: 10px;
     margin: 50px 105px;
@@ -77,7 +77,7 @@ $totalColumns: 9;
       padding-top: 10px;
       margin: 0 auto 20px;
       overflow: hidden;
-      background-color: #f1f3f8;
+      background-color: $mainColor;
       img {
         display: block;
         width: 100%;
@@ -85,7 +85,7 @@ $totalColumns: 9;
       }
       .cs {
         font-size: 30px;
-        color: #393b44;
+        color: $textColor;
         letter-spacing: 0.1em;
         line-height: 200px;
       }
@@ -94,56 +94,58 @@ $totalColumns: 9;
       padding-top: 10px;
       font-size: 30px;
       line-height: 2.625rem;
-      color: #393b44;
+      color: $textColor;
       letter-spacing: 0.1em;
     }
     &__title {
       font-size: 20px;
       line-height: 2.375rem;
-      color: #8d93ab;
+      color: $deepColor;
       letter-spacing: 0.1em;
     }
   }
 }
 
-body {
-  background-image: linear-gradient(#d6e0f0 0% 12%, #f1f3f8 13% 100%,);
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient($subColor 0% 22%, $mainColor 23% 100%,);
   background-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  transform-origin: top center;
-  transform: scale(0.8);
-  .menuLink {
-    text-decoration: none;
-  }
-  .dojoSelect {
-    text-align: center;
-    margin-top: 100px;
-    .dojoBtn {
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transform-origin: top center;
+    transform: scale(0.8);
+    .menuLink {
       text-decoration: none;
-      font-size: 30px;
-      color: #8d93ab;
-      display: inline-block;
-      transition: .3s;
-      -webkit-transform: scale(1);
-      transform: scale(1);
     }
-    .dojoBtn:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+    .dojoSelect {
+      text-align: center;
+      margin: 100px 0;
+      .dojoBtn {
+        text-decoration: none;
+        font-size: 30px;
+        color: $deepColor;
+        display: inline-block;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      .dojoBtn:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
   }
 }
 
 .at-section {
+  position: relative;
   &__title {
     text-align: center;
     .logo2 {
@@ -161,4 +163,58 @@ body {
       transform: scale(1.1);
     }
   }
+  &__user {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    display: flex;
+    font-size: 22px;
+    .userL {
+      text-decoration: none;
+      display: inline-block;
+      transition: .3s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .userL:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .userR {
+      text-decoration: none;
+      padding-left: 35px;
+      display: inline-block;
+      transition: .3s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .userR:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.simple-calendar {
+  .day {}
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {}
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
 }
